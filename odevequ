@@ -1,0 +1,18 @@
+print("Enter a number:")
+a = int(input())
+so = 0
+se = 0
+n = 0
+i = 0
+while a>0:
+    i +=1
+    n=a%10    
+    if n%2==0:
+        se=se+n
+    else:
+        so=so+n
+    a = a//10  
+if se==so and i%2==0 :
+    print("satisfy the condition")
+else:
+    print("do not satisfy the condition")

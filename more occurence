@@ -1,0 +1,4 @@
+from collections import Counter
+ls = [1, 2, 3, 4, 2, 5, 6, 3]
+d = Counter(ls).items()
+print([key for key,value in d if value >1 ])

@@ -1,0 +1,10 @@
+a = []
+b=[0]*6
+for i in range(6):
+    a.append(int(input()))
+for i in range(0, len(a)//2):
+    b[len(a)//2+i]=a[i]
+for i in range(len(a)//2, len(a)):    
+    b[i-len(a)//2]=a[i] 
+for i in range(6):
+    print(b[i], end = " ")

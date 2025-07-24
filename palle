@@ -1,0 +1,12 @@
+print("Enter a number:")
+a = int(input())
+re = 0
+b=a
+while a>0:
+    n = a%10    
+    re = re*10+n
+    a = a//10
+if(re==b):
+    print ("pallendrome")
+else:
+    print ("not pallendrome")

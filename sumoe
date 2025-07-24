@@ -1,0 +1,17 @@
+print("Enter a number:")
+a = int(input())
+so = 0
+se = 0
+n = 0
+while a>0:
+    n=a%10    
+    if n%2==0:
+        se=se+n
+    else:
+        so=so+n
+    a = a//10  
+if se==so:
+    print("sum of odd digits and even digits equal")
+else:
+    print("sum of odd digits and even digits not equal")
+print("sum of odd digits:", so,"\nsum of even digits:",se)

@@ -1,0 +1,23 @@
+print("Enter a number:")
+a = int(input())
+b=a
+so = 0
+se = 0
+n = 0
+i=0
+j=0
+while a>0:
+    i +=1
+    a=a//10    
+while j<i/2:
+    n=b%10
+    so=so*10+n
+    b=b//10
+    j +=1
+while j<i:
+    n=b%10
+    se=se*10+n
+    b=b//10
+    j +=1
+sum=str(se) + str(so)
+print(sum)
