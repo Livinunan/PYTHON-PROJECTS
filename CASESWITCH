@@ -1,0 +1,8 @@
+s=input()
+num=""
+for l in s:
+  if l.isupper()==True:
+    num+=(l.lower())
+  else:
+    num+=(l.upper())
+print(num)

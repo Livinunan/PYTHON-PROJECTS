@@ -1,0 +1,8 @@
+a = int(input("Enter a number:"))
+i = 0
+while a > 0:
+  n=a % 10
+  a = a // 10
+  if n==0:
+    i += 1
+print("Number of zeroes:", i)
