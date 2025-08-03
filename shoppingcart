@@ -19,7 +19,7 @@ class ShoppingCart:
         return sum(item.price for item in self.items)
     def _len_(self):
         return len(self.items)
-if _name_ == '_main_':
+if __name__ == '_main_':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
 
     n = int(input())
